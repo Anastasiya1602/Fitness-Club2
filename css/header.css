@@ -1,0 +1,29 @@
+.header {
+  padding: 30px 160px 10px 160px;
+  background-color: #EDEDEB;
+  max-height: 140px;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__list {
+  display: flex;
+}
+
+.navigation__list-item {
+  padding: 10px 30px;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.navigation__list-link {
+  text-decoration: none;
+  color: #292929;
+}
