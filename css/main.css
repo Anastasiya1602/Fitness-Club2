@@ -1,47 +1,43 @@
 .main {  
-  min-height: 816px;
-  background-color: #EDEDEB;
-  /* overflow: hidden; */
+  padding-top: 60px;
+  background: linear-gradient(180deg,#EBEBE9 0%, #EDEDEB 100%); 
 }
 
 .main__wrapper {
   position: relative;
-  max-height: 816px;
-  min-width: 100%;
 }
 
 .main__fitness-man {
   position: absolute;
   z-index: 1;
-  max-width: 870px;
-  top: -26px;
+  left: -150px;
+  bottom: 0;
 }
 
 .main__title {
-  position: absolute;
-  top: 198px;
-  left: 386px;
-  font-size: 140px;
-  text-transform: uppercase;
+  position: relative;
+  top: 60px;
+  padding-left: 282px;
+  font-size: 160px;
   letter-spacing: 8px;
   color: #CFCFCD;
 }
 
 .main__description {
-  position: absolute;
-  right: 140px;
-  top: 408px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  Width: 487px;
+  position: relative;
+  top: -10px;
+  margin-left: auto;
+  max-width: 587px;
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 2px; 
 }
 
 .main__description-link {
-  text-transform: uppercase;
+  display: block;
+  padding: 11px 32px;
+  padding-bottom: 192px;
+  margin-top: 14px;
   text-decoration: none;
   color: #000;
 }
