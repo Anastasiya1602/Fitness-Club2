@@ -1,0 +1,43 @@
+.main {  
+  padding-top: 60px;
+  background: linear-gradient(180deg,#EBEBE9 0%, #EDEDEB 100%); 
+}
+
+.main__wrapper {
+  position: relative;
+}
+
+.main__fitness-man {
+  position: absolute;
+  z-index: 1;
+  left: -150px;
+  bottom: 0;
+}
+
+.main__title {
+  position: relative;
+  top: 60px;
+  padding-left: 282px;
+  font-size: 160px;
+  letter-spacing: 8px;
+  color: #CFCFCD;
+}
+
+.main__description {
+  position: relative;
+  top: -10px;
+  margin-left: auto;
+  max-width: 587px;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 2px; 
+}
+
+.main__description-link {
+  display: block;
+  padding: 11px 32px;
+  padding-bottom: 192px;
+  margin-top: 14px;
+  text-decoration: none;
+  color: #000;
+}
