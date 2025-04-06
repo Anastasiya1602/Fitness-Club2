@@ -7,7 +7,7 @@
   position: relative;
 }
 
-.main__fitness-man {
+.main__image-man {
   position: absolute;
   z-index: 1;
   left: -150px;
