@@ -1,0 +1,38 @@
+.about {
+  position: relative;
+  padding-top: 170px;
+
+  &__title {
+    position: relative;
+    font-size: 80px;
+    z-index: 3;
+  }
+
+  &__description {
+    position: relative;
+    z-index: 2;
+    top: -222px;
+    left: 70px;
+    padding: 335px 62px 57px 57px;
+    max-width: 562px;
+    border: 6px solid #FF8340;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 20%;
+
+    &-link {
+      display: block;
+      padding: 11px 32px;
+      margin-top: 14px;
+      text-decoration: none;
+      color: #000;
+    }
+  }
+
+  &__image-girl {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+  }
+}

@@ -79,4 +79,59 @@ h1, h2, h3 {
   margin-top: 14px;
   text-decoration: none;
   color: #000;
+}
+
+.about {
+  position: relative;
+  padding-top: 170px;
+}
+.about__title {
+  position: relative;
+  font-size: 80px;
+  z-index: 3;
+}
+.about__description {
+  position: relative;
+  z-index: 2;
+  top: -222px;
+  left: 70px;
+  padding: 335px 62px 57px 57px;
+  max-width: 562px;
+  border: 6px solid #FF8340;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 20%;
+}
+.about__description-link {
+  display: block;
+  padding: 11px 32px;
+  margin-top: 14px;
+  text-decoration: none;
+  color: #000;
+}
+.about__image-girl {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+}
+
+.direction {
+  background-color: #292929;
+}
+.direction__wrapper {
+  padding: 125px 0 80px 0;
+}
+.direction__wrapper-title {
+  margin-bottom: 34px;
+  font-size: 80px;
+  line-height: 160px;
+  letter-spacing: 5%;
+  color: #FFFFFF;
+}
+.direction__wrapper-descrip {
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 10%;
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
