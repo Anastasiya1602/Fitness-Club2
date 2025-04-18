@@ -3,6 +3,15 @@
   background: linear-gradient(180deg,#EBEBE9 0%, #EDEDEB 100%);
   max-height: 140px;
 
+  @media screen and (max-width: 952px) {
+    padding: 16px 32px;
+
+    &__logo {
+      width: 117px;
+      height: 64px;
+    }   
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: row;
@@ -11,6 +20,10 @@
 
     .navigation__list {
       display: flex;
+
+      @media screen and (max-width: 952px) {
+        display: none;
+      }
 
       &-item {
         font-size: 20px;
@@ -25,38 +38,19 @@
         color: #292929;
       }
     }
-
+    
     .burger {
       display: none;
-
-      &-menu {
-        display: none;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 952px){
-  .header {
-    padding: 16px 32px;
-
-    &__logo {
-          width: 117px;
-          height: 64px;
-        } 
-
-    .navigation__list {
-      display: none;
-    }
-
-    .burger {
-      display: block;
       position: relative;
       border: 1px solid #292929;
       border-radius: 4px;
       background: transparent;
       width: 48px;
       height: 48px;
+
+      @media screen  and (max-width:952px){
+        display: block;
+      }
     }
         
     .burger::before,.burger::after {
@@ -68,15 +62,18 @@
       height: 3px;
       background: #000;
     }
+
     .burger::before {
       top: 13px;
       box-shadow: 0 9px 0 #000;
       transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
     }
+
     .burger::after {
       bottom: 13px;
       transition: bottom .3s .15s, transform .3s;
     }
+
     .burger.active::before {
       top: 22px;
       left: 10px;
@@ -85,6 +82,7 @@
       box-shadow: 0 6px 0 rgba(0,0,0,0);
       transition: box-shadow .15s, top .3s, transform .3s .15s;
     }
+
     .burger.active::after {
       bottom: 22px;
       left: 10px;
