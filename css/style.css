@@ -40,7 +40,67 @@ h1, h2, h3 {
   text-decoration: none;
   color: #292929;
 }
+.header__wrapper .burger {
+  display: none;
+}
+.header__wrapper .burger-menu {
+  display: none;
+}
 
+@media screen and (max-width: 952px) {
+  .header {
+    padding: 16px 32px;
+  }
+  .header__logo {
+    width: 117px;
+    height: 64px;
+  }
+  .header .navigation__list {
+    display: none;
+  }
+  .header .burger {
+    display: block;
+    position: relative;
+    border: 1px solid #292929;
+    border-radius: 4px;
+    background: transparent;
+    width: 48px;
+    height: 48px;
+  }
+  .header .burger::before, .header .burger::after {
+    content: "";
+    left: 13px;
+    position: absolute;
+    display: block;
+    width: 22px;
+    height: 3px;
+    background: #000;
+  }
+  .header .burger::before {
+    top: 13px;
+    box-shadow: 0 9px 0 #000;
+    transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s;
+  }
+  .header .burger::after {
+    bottom: 13px;
+    transition: bottom 0.3s 0.15s, transform 0.3s;
+  }
+  .header .burger.active::before {
+    top: 22px;
+    left: 10px;
+    width: 28px;
+    transform: rotate(45deg);
+    box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+    transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s;
+  }
+  .header .burger.active::after {
+    bottom: 22px;
+    left: 10px;
+    width: 28px;
+    transform: rotate(-45deg);
+    transition: bottom 0.3s, transform 0.3s 0.15s;
+  }
+}
 .main {
   padding-top: 60px;
   background: linear-gradient(180deg, #EBEBE9 0%, #EDEDEB 100%);
