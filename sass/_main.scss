@@ -43,32 +43,30 @@
   }
 }
 
-// @media screen and (max-width:952px) {
-//   .main {
-//     padding-top: 30px;
+@media screen and (max-width: 952px) {
+  .main {
+    padding-top: 0;
 
-//     .main__image-man {
-//       width: 624px;
-//       height: 624px;
-//       left: 0px;
-//       top: -100px;
-//     }
+    &__image-man {
+      width: 624px;
+      height: 624px;
+      left: -65px;
+    }
 
-//     .main__title {
-//       top: 60px;
-//       padding-left: 164px;
-//       font-size: 100px;
-//       letter-spacing: 5px;
-//     }
+    &__title {
+      padding-left: 96px;
+      top: 96px;
+      font-size: 100px;
+    }
 
-//     .main__description{
-//       top: -144px;
-//       max-width:375px;
-      
-//       &-link {
-//         padding-bottom: 11px;
-//         margin-top: 14px;
-//       }
-//     }
-//   }
-// }
+    &__description {
+      top: -35px;
+      padding: 0 32px;
+      max-width: 417px;
+
+      &-link {
+        padding-bottom: 0;
+      }
+    }
+  }
+}

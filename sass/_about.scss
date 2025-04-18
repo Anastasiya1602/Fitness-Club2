@@ -36,3 +36,33 @@
     bottom: 0;
   }
 }
+
+@media screen and (max-width: 952px) {
+  .about {
+    padding:0px 3px 1px 32px;
+
+    &__title {
+      top: 54px;
+      font-size: 60px;
+    }
+
+    &__description {
+      top: -141px;
+      left: 85px;
+      padding: 276px 39px 14px 26px;
+      max-width: 504px;
+      line-height: 120%;
+      letter-spacing: 1.5px;  
+
+      &-link {
+        margin-top: 0px;
+        padding: 36px 32px 11px 32px;
+      }
+    }
+
+    &__image-girl {
+      width: 598px;
+      height: 374px;
+    }
+  }
+}

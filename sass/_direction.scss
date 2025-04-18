@@ -20,3 +20,20 @@
     }
   }  
 }
+
+@media screen and (max-width: 952px) {
+
+  .direction__wrapper {
+    padding: 53px 32px;
+
+    &-title {
+      font-size: 60px;
+      margin-bottom: 0;
+    }
+
+    &-descrip {
+      line-height: 120%;
+      letter-spacing: 2px;
+    }
+  } 
+}
