@@ -389,6 +389,15 @@ h1, h2, h3 {
   align-items: center;
   border: 6px solid #292929;
 }
+.subscribe-card .card:hover {
+  transform: scale(1.1);
+  border: 6px solid #FF8340;
+}
+@media screen and (max-width: 952px) {
+  .subscribe-card .card:hover {
+    transform: scale(1.03);
+  }
+}
 @media screen and (max-width: 952px) {
   .subscribe-card .card {
     display: flex;
@@ -489,15 +498,6 @@ h1, h2, h3 {
 }
 .subscribe-card .card .price__box .card__button:active {
   color: #843500;
-}
-.subscribe-card .card:hover {
-  transform: scale(1.1);
-  border: 6px solid #FF8340;
-}
-@media screen and (max-width: 952px) {
-  .subscribe-card .card:hover {
-    transform: scale(1.03);
-  }
 }
 .subscribe-card .card:hover .card__icon-number {
   transform: scale(1.1);

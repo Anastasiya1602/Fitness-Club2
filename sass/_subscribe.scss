@@ -33,6 +33,15 @@
       align-items: center;
       border: 6px solid #292929;
 
+      &:hover {
+        transform: scale(1.1);
+        border: 6px solid #FF8340;
+  
+        @media screen and (max-width: 952px) {
+          transform: scale(1.03);
+        }
+      }
+
       @media screen and (max-width: 952px){
         display: flex;
         flex-direction: row;
@@ -127,30 +136,22 @@
           letter-spacing: 2px;
           border: none;
           background-color: white;
+          &:hover {
+            color: #FF8340;
+          }
+          &:active {
+            color: #843500;
+          }        
         }
-        .card__button:hover {
-          color: #FF8340;
+      }
+      &:hover .card__icon-number {
+        transform: scale(1.1);
+        color: #FF8340;
+        border: 6px solid #FF8340;
+  
+        @media screen and (max-width: 952px) {
+          transform: scale(1.03);
         }
-        .card__button:active {
-          color: #843500;
-        }        
-      }
-    }
-    .card:hover {
-      transform: scale(1.1);
-      border: 6px solid #FF8340;
-
-      @media screen and (max-width: 952px) {
-        transform: scale(1.03);
-      }
-    }
-    .card:hover .card__icon-number {
-      transform: scale(1.1);
-      color: #FF8340;
-      border: 6px solid #FF8340;
-
-      @media screen and (max-width: 952px) {
-        transform: scale(1.03);
       }
     }
   }
