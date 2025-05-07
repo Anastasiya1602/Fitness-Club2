@@ -1,6 +1,11 @@
 .subscribe {
   padding: 110px 0 34px 0;
 
+  @media screen and (max-width: 1440px) {
+    padding: 110px 32px 34px 32px;
+  }
+
+
   @media screen and (max-width: 952px){
     padding: 53px 32px 32px 32px;
   }
@@ -18,6 +23,12 @@
   &-card {
     display: flex;
     gap: 30px;
+
+    @media screen and (max-width: 1350px) {
+      flex-wrap: wrap;
+      padding: 32px;
+      gap: 60px;
+    }
 
     @media screen and (max-width: 952px){
       display: flex;

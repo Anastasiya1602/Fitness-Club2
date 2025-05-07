@@ -17,6 +17,10 @@
     left: -150px;
     bottom: 0;
 
+    @media screen and (max-width: 1398px){
+      width: 890px;
+    }
+
     @media screen and (max-width: 952px){
       width: 624px;
       left: -65px;
@@ -30,6 +34,11 @@
     font-size: 160px;
     letter-spacing: 8px;
     color: #CFCFCD;
+
+    
+  @media screen and (max-width: 1398px) {
+    font-size: clamp(60px, 9vw, 140px);
+  }
 
     @media screen and (max-width: 952px) {
       top: 70px;

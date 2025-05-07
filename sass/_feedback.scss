@@ -2,8 +2,8 @@
   background-color: #FF8340;
 
   &__wrapper {
-    padding: 40px 0 176px 0;
-
+    padding: 40px 32px 176px 32px;
+    
     @media screen and (max-width: 952px) {
       padding: 32px;
     }
