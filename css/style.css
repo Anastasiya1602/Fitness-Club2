@@ -91,6 +91,16 @@ h1, h2, h3 {
   max-width: 1400px;
 }
 
+a {
+  cursor: pointer;
+}
+a:hover {
+  color: #FF8340;
+}
+a:active {
+  color: #843500;
+}
+
 .header {
   padding: 30px 10px;
   background: linear-gradient(180deg, #EBEBE9 0%, #EDEDEB 100%);
@@ -130,6 +140,12 @@ h1, h2, h3 {
   text-decoration: none;
   color: #292929;
 }
+.header__wrapper .navigation__list-link:hover {
+  color: #FF8340;
+}
+.header__wrapper .navigation__list-link:active {
+  color: #843500;
+}
 .header__wrapper .burger {
   display: none;
   position: relative;
@@ -144,7 +160,7 @@ h1, h2, h3 {
     display: block;
   }
 }
-.header__wrapper .burger::before, .header__wrapper .burger::after {
+.header__wrapper .burger:before, .header__wrapper .burger::after {
   content: "";
   left: 13px;
   position: absolute;
@@ -183,10 +199,12 @@ h1, h2, h3 {
 }
 .main__wrapper {
   position: relative;
+  padding-top: 100px;
 }
 @media screen and (max-width: 952px) {
   .main__wrapper {
     max-height: 505px;
+    padding-top: 0;
   }
 }
 .main__image-man {
@@ -446,6 +464,12 @@ h1, h2, h3 {
   background: transparent;
   border: none;
   cursor: pointer;
+}
+.feedback .form__submit:hover {
+  color: #FFFFFF;
+}
+.feedback .form__submit:active {
+  color: #843500;
 }
 
 .subscribe {

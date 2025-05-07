@@ -87,6 +87,13 @@
       background: transparent;
       border: none;
       cursor: pointer;
+
+      &:hover {
+        color: #FFFFFF;
+      }
+      &:active {
+        color: #843500;
+      } 
     }
   }
 }
