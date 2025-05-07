@@ -397,6 +397,12 @@ a:active {
   line-height: 160px;
   letter-spacing: 2px;
 }
+@media screen and (max-width: 952px) {
+  .feedback__title {
+    font-size: 32px;
+    line-height: 100px;
+  }
+}
 .feedback__line {
   margin: 0 auto 50px auto;
   width: 64px;

@@ -14,6 +14,11 @@
     font-size: 45px;
     line-height: 160px;
     letter-spacing: 2px;
+
+    @media screen and (max-width: 952px) {
+      font-size: 32px;
+      line-height: 100px;
+    }
   }
 
   &__line {
