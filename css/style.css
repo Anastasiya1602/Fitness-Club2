@@ -1,3 +1,79 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input {
+  outline: none;
+}
+
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/Arial-Black.eot");
+  src: url("../fonts/Arial-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Arial-Black.woff") format("woff"), url("../fonts/Arial-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.eot");
+  src: url("../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
 *, a, p {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -273,5 +349,163 @@ h1, h2, h3 {
   .direction__wrapper-descrip {
     line-height: 120%;
     letter-spacing: 2px;
+  }
+}
+
+.subscribe {
+  padding: 110px 0 34px 0;
+}
+@media screen and (max-width: 952px) {
+  .subscribe {
+    padding: 53px 32px 32px 32px;
+  }
+}
+.subscribe__title {
+  margin-bottom: 83px;
+  font-size: 80px;
+  line-height: 90px;
+}
+@media screen and (max-width: 952px) {
+  .subscribe__title {
+    font-size: 60px;
+  }
+}
+.subscribe-card {
+  display: flex;
+  gap: 30px;
+}
+@media screen and (max-width: 952px) {
+  .subscribe-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.subscribe-card .card {
+  display: flex;
+  flex-direction: column;
+  padding: 38px 28px 32px 28px;
+  width: 310px;
+  align-items: center;
+  border: 6px solid #292929;
+}
+.subscribe-card .card:hover {
+  transform: scale(1.1);
+  border: 6px solid #FF8340;
+}
+@media screen and (max-width: 952px) {
+  .subscribe-card .card:hover {
+    transform: scale(1.03);
+  }
+}
+@media screen and (max-width: 952px) {
+  .subscribe-card .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 890px;
+    height: 248px;
+    padding: 66px 56px 66px 65px;
+  }
+}
+.subscribe-card .card__icon {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-family: Arial;
+  line-height: normal;
+}
+.subscribe-card .card__icon-number {
+  padding: 5px 24px 9px 20px;
+  width: 76px;
+  height: 76px;
+  font-size: 40px;
+  font-weight: 500;
+  border: 4px solid #292929;
+  border-radius: 43px;
+}
+.subscribe-card .card__icon-last {
+  padding: 5px 0px 0px 5px;
+}
+.subscribe-card .card__icon-subtitle {
+  margin-bottom: 74px;
+  color: #292929;
+  font-family: Arial;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 1px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 952px) {
+  .subscribe-card .card__icon-subtitle {
+    margin-bottom: 0;
+  }
+}
+.subscribe-card .card__description {
+  margin-bottom: 30px;
+  width: 234px;
+  color: #000;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 952px) {
+  .subscribe-card .card__description {
+    margin-bottom: 0;
+  }
+}
+.subscribe-card .card .price__box {
+  text-align: center;
+}
+@media screen and (max-width: 952px) {
+  .subscribe-card .card .price__box {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.subscribe-card .card .price__box .card__price {
+  margin-bottom: 16px;
+  color: #292929;
+  font-family: Arial;
+  font-size: 45px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 2.25px;
+}
+@media screen and (max-width: 952px) {
+  .subscribe-card .card .price__box .card__price {
+    margin-bottom: 0;
+  }
+}
+.subscribe-card .card .price__box .card__button {
+  padding: 11px 0px;
+  color: #292929;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 2px;
+  border: none;
+  background-color: white;
+}
+.subscribe-card .card .price__box .card__button:hover {
+  color: #FF8340;
+}
+.subscribe-card .card .price__box .card__button:active {
+  color: #843500;
+}
+.subscribe-card .card:hover .card__icon-number {
+  transform: scale(1.1);
+  color: #FF8340;
+  border: 6px solid #FF8340;
+}
+@media screen and (max-width: 952px) {
+  .subscribe-card .card:hover .card__icon-number {
+    transform: scale(1.03);
   }
 }/*# sourceMappingURL=style.css.map */
