@@ -94,7 +94,7 @@
       </p>
 
       <form class="form">
-        <select class="form__input form__select"  name="" id="">
+        <select class="form__input form__select"  name="" id="" required>
           <option value="Категория вопроса">Категория вопроса</option>
           <option  value="Тренерский состав">Тренерский состав</option>
           <option  value="Выбор абонемента">Выбор абонемента</option>
@@ -102,11 +102,11 @@
           <option value="Стоимость услуг">Стоимость услуг</option>
         </select>
 
-        <input class="form__input" type="text" placeholder="Ваше имя">
-        <input class="form__input" type="text" placeholder="Телефон">
-        <input class="form__input" type="text" placeholder="E-mail">
+        <input class="form__input" type="text" placeholder="Ваше имя" required>
+        <input class="form__input" type="number" placeholder="Телефон" required>
+        <input class="form__input" type="email" placeholder="E-mail" required>
 
-        <textarea class="form__massage" name="" id="" cols="30" rows="10" placeholder="Текст сообщения"></textarea>
+        <textarea class="form__massage" required name="" id="" cols="30" rows="10" placeholder="Текст сообщения"></textarea>
 
         <button class="form__submit">
           ЗАКАЗАТЬ ЗВОНОК

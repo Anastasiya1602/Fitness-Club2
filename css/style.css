@@ -305,7 +305,7 @@ a:active {
   border: 6px solid #FF8340;
   font-size: 20px;
   line-height: 100%;
-  letter-spacing: 20%;
+  letter-spacing: 1.5px;
 }
 @media screen and (max-width: 952px) {
   .about__description {
@@ -370,7 +370,7 @@ a:active {
 .direction__wrapper-descrip {
   font-size: 20px;
   line-height: 100%;
-  letter-spacing: 10%;
+  letter-spacing: 1.5px;
   color: #FFFFFF;
 }
 @media screen and (max-width: 952px) {
@@ -412,8 +412,14 @@ a:active {
 .feedback__description {
   font-size: 20px;
   line-height: 100%;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 952px) {
+  .feedback__description {
+    line-height: 120%;
+    letter-spacing: 2px;
+  }
 }
 .feedback .form {
   display: flex;
@@ -425,6 +431,7 @@ a:active {
   padding: 18px 0 17px 34px;
   width: 49%;
   border: 2px solid #CFCFCD;
+  font-size: 16px;
 }
 .feedback .form__input::-moz-placeholder {
   font-size: 20px;
@@ -458,6 +465,7 @@ a:active {
   background: #FFF;
   border: 2px solid #CFCFCD;
   overflow-y: hidden;
+  font-size: 16px;
 }
 .feedback .form__massage::-moz-placeholder {
   padding: 18px 0 157px 34px;

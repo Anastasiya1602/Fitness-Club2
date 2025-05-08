@@ -31,8 +31,13 @@
   &__description {
     font-size: 20px;
     line-height: 100%;
-    letter-spacing:2px;
+    letter-spacing: 1.5px;
     margin-bottom: 40px;
+
+    @media screen and (max-width: 952px) {
+      line-height: 120%;
+      letter-spacing: 2px;
+    }
   }
 
   .form {
@@ -45,6 +50,7 @@
       padding: 18px 0 17px 34px;
       width: 49%;
       border: 2px solid #CFCFCD;
+      font-size: 16px;
       
       &::placeholder {
         font-size: 20px;
@@ -74,6 +80,7 @@
       background: #FFF;
       border: 2px solid #CFCFCD;
       overflow-y: hidden; 
+      font-size: 16px;
 
       &::placeholder {
         padding: 18px 0 157px 34px;
