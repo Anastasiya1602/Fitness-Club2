@@ -91,6 +91,16 @@ h1, h2, h3 {
   max-width: 1400px;
 }
 
+a {
+  cursor: pointer;
+}
+a:hover {
+  color: #FF8340;
+}
+a:active {
+  color: #843500;
+}
+
 .header {
   padding: 30px 10px;
   background: linear-gradient(180deg, #EBEBE9 0%, #EDEDEB 100%);
@@ -130,6 +140,12 @@ h1, h2, h3 {
   text-decoration: none;
   color: #292929;
 }
+.header__wrapper .navigation__list-link:hover {
+  color: #FF8340;
+}
+.header__wrapper .navigation__list-link:active {
+  color: #843500;
+}
 .header__wrapper .burger {
   display: none;
   position: relative;
@@ -144,7 +160,7 @@ h1, h2, h3 {
     display: block;
   }
 }
-.header__wrapper .burger::before, .header__wrapper .burger::after {
+.header__wrapper .burger:before, .header__wrapper .burger::after {
   content: "";
   left: 13px;
   position: absolute;
@@ -183,10 +199,12 @@ h1, h2, h3 {
 }
 .main__wrapper {
   position: relative;
+  padding-top: 100px;
 }
 @media screen and (max-width: 952px) {
   .main__wrapper {
     max-height: 505px;
+    padding-top: 0;
   }
 }
 .main__image-man {
@@ -194,6 +212,11 @@ h1, h2, h3 {
   z-index: 1;
   left: -150px;
   bottom: 0;
+}
+@media screen and (max-width: 1398px) {
+  .main__image-man {
+    width: 890px;
+  }
 }
 @media screen and (max-width: 952px) {
   .main__image-man {
@@ -208,6 +231,11 @@ h1, h2, h3 {
   font-size: 160px;
   letter-spacing: 8px;
   color: #CFCFCD;
+}
+@media screen and (max-width: 1398px) {
+  .main__title {
+    font-size: clamp(60px, 9vw, 140px);
+  }
 }
 @media screen and (max-width: 952px) {
   .main__title {
@@ -277,7 +305,7 @@ h1, h2, h3 {
   border: 6px solid #FF8340;
   font-size: 20px;
   line-height: 100%;
-  letter-spacing: 20%;
+  letter-spacing: 1.5px;
 }
 @media screen and (max-width: 952px) {
   .about__description {
@@ -319,7 +347,7 @@ h1, h2, h3 {
   background-color: #292929;
 }
 .direction__wrapper {
-  padding: 125px 0 80px 0;
+  padding: 125px 32px 80px 32px;
 }
 @media screen and (max-width: 952px) {
   .direction__wrapper {
@@ -342,7 +370,7 @@ h1, h2, h3 {
 .direction__wrapper-descrip {
   font-size: 20px;
   line-height: 100%;
-  letter-spacing: 10%;
+  letter-spacing: 1.5px;
   color: #FFFFFF;
 }
 @media screen and (max-width: 952px) {
@@ -350,6 +378,122 @@ h1, h2, h3 {
     line-height: 120%;
     letter-spacing: 2px;
   }
+}
+
+.feedback {
+  background-color: #FF8340;
+}
+.feedback__wrapper {
+  padding: 40px 32px 176px 32px;
+}
+@media screen and (max-width: 952px) {
+  .feedback__wrapper {
+    padding: 32px;
+  }
+}
+.feedback__title {
+  text-align: center;
+  font-size: 45px;
+  line-height: 160px;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 952px) {
+  .feedback__title {
+    font-size: 32px;
+    line-height: 100px;
+  }
+}
+.feedback__line {
+  margin: 0 auto 50px auto;
+  width: 64px;
+  height: 6px;
+  background-color: #292929;
+}
+.feedback__description {
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 1.5px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 952px) {
+  .feedback__description {
+    line-height: 120%;
+    letter-spacing: 2px;
+  }
+}
+.feedback .form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px 0;
+}
+.feedback .form__input {
+  padding: 18px 0 17px 34px;
+  width: 49%;
+  border: 2px solid #CFCFCD;
+  font-size: 16px;
+}
+.feedback .form__input::-moz-placeholder {
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #B0B0B0;
+}
+.feedback .form__input::placeholder {
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #B0B0B0;
+}
+.feedback .form__select {
+  padding: 9px 0 14px 29px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #FFF;
+  background-color: #292929;
+  border: 2px solid #292929;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("../logo/arrow.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 40px) center;
+  outline: none;
+  cursor: pointer;
+}
+.feedback .form__massage {
+  padding: 18px 0 0 34px;
+  width: 100%;
+  background: #FFF;
+  border: 2px solid #CFCFCD;
+  overflow-y: hidden;
+  font-size: 16px;
+}
+.feedback .form__massage::-moz-placeholder {
+  padding: 18px 0 157px 34px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #B0B0B0;
+}
+.feedback .form__massage::placeholder {
+  padding: 18px 0 157px 34px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #B0B0B0;
+}
+.feedback .form__submit {
+  margin-left: auto;
+  padding: 11px 0;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 2px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.feedback .form__submit:hover {
+  color: #FFFFFF;
+}
+.feedback .form__submit:active {
+  color: #843500;
 }
 
 .subscribe {
@@ -388,6 +532,7 @@ h1, h2, h3 {
   width: 310px;
   align-items: center;
   border: 6px solid #292929;
+  cursor: pointer;
 }
 .subscribe-card .card:hover {
   transform: scale(1.1);
@@ -492,6 +637,7 @@ h1, h2, h3 {
   letter-spacing: 2px;
   border: none;
   background-color: white;
+  cursor: pointer;
 }
 .subscribe-card .card .price__box .card__button:hover {
   color: #FF8340;

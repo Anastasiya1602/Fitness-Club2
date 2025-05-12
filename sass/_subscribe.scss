@@ -32,6 +32,7 @@
       width: 310px;
       align-items: center;
       border: 6px solid #292929;
+      cursor: pointer;
 
       &:hover {
         transform: scale(1.1);
@@ -136,6 +137,8 @@
           letter-spacing: 2px;
           border: none;
           background-color: white;
+          cursor: pointer;
+          
           &:hover {
             color: #FF8340;
           }
