@@ -512,7 +512,7 @@ a:active {
 .system-info {
   grid-row: 1/2;
   grid-column: 1/4;
-  padding: 40px 35px 40px 35px;
+  padding: 80px 76px 40px 89px;
 }
 @media screen and (max-width: 952px) {
   .system-info {
