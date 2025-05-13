@@ -525,6 +525,7 @@ a:active {
   font-size: 80px;
   line-height: 160px;
   letter-spacing: 4px;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 952px) {
   .system-info__title {
@@ -563,6 +564,7 @@ a:active {
   line-height: 100%;
   letter-spacing: 1px;
   margin-bottom: 30px;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 952px) {
   .system-item__title {
