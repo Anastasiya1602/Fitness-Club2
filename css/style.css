@@ -74,8 +74,9 @@ input {
   font-weight: 500;
   font-style: normal;
 }
-*, a, p {
+*, a, p, button {
   font-family: "Roboto", sans-serif;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
 }
@@ -92,12 +93,29 @@ h1, h2, h3 {
 }
 
 a {
+  padding: 10px 32px;
+  text-decoration: none;
+  color: #292929;
   cursor: pointer;
 }
 a:hover {
   color: #FF8340;
 }
 a:active {
+  color: #843500;
+}
+
+button {
+  padding: 11px 0px;
+  background: transparent;
+  border: none;
+  color: #292929;
+  cursor: pointer;
+}
+button:hover {
+  color: #FF8340;
+}
+button:active {
   color: #843500;
 }
 
@@ -134,17 +152,6 @@ a:active {
   line-height: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
-}
-.header__wrapper .navigation__list-link {
-  padding: 10px 32px;
-  text-decoration: none;
-  color: #292929;
-}
-.header__wrapper .navigation__list-link:hover {
-  color: #FF8340;
-}
-.header__wrapper .navigation__list-link:active {
-  color: #843500;
 }
 .header__wrapper .burger {
   display: none;
@@ -250,7 +257,6 @@ a:active {
   padding: 11px 32px;
   margin-left: auto;
   max-width: 587px;
-  font-size: 20px;
   line-height: 23px;
   letter-spacing: 2px;
 }
@@ -263,11 +269,8 @@ a:active {
 }
 .main__description-link {
   display: block;
-  padding: 11px 32px;
   padding-bottom: 192px;
   margin-top: 14px;
-  text-decoration: none;
-  color: #000;
 }
 @media screen and (max-width: 952px) {
   .main__description-link {
@@ -303,7 +306,6 @@ a:active {
   padding: 335px 62px 57px 57px;
   max-width: 562px;
   border: 6px solid #FF8340;
-  font-size: 20px;
   line-height: 100%;
   letter-spacing: 1.5px;
 }
@@ -319,10 +321,7 @@ a:active {
 }
 .about__description-link {
   display: block;
-  padding: 11px 32px;
   margin-top: 14px;
-  text-decoration: none;
-  color: #000;
 }
 @media screen and (max-width: 952px) {
   .about__description-link {
@@ -368,7 +367,6 @@ a:active {
   }
 }
 .direction__wrapper-descrip {
-  font-size: 20px;
   line-height: 100%;
   letter-spacing: 1.5px;
   color: #FFFFFF;
@@ -410,7 +408,6 @@ a:active {
   background-color: #292929;
 }
 .feedback__description {
-  font-size: 20px;
   line-height: 100%;
   letter-spacing: 1.5px;
   margin-bottom: 40px;
@@ -537,7 +534,6 @@ a:active {
   }
 }
 .system-info__description {
-  font-size: 20px;
   line-height: 100%;
   letter-spacing: 2px;
 }
@@ -572,7 +568,6 @@ a:active {
   }
 }
 .system-item__description {
-  font-size: 20px;
   line-height: 100%;
   letter-spacing: 2px;
 }
@@ -709,8 +704,6 @@ a:active {
   width: 234px;
   color: #000;
   text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
   line-height: normal;
   letter-spacing: 2px;
 }
@@ -742,23 +735,6 @@ a:active {
     margin-bottom: 0;
   }
 }
-.subscribe-card .card .price__box .card__button {
-  padding: 11px 0px;
-  color: #292929;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  line-height: normal;
-  letter-spacing: 2px;
-  border: none;
-  background-color: white;
-  cursor: pointer;
-}
-.subscribe-card .card .price__box .card__button:hover {
-  color: #FF8340;
-}
-.subscribe-card .card .price__box .card__button:active {
-  color: #843500;
-}
 .subscribe-card .card:hover .card__icon-number {
   transform: scale(1.1);
   color: #FF8340;
@@ -768,4 +744,24 @@ a:active {
   .subscribe-card .card:hover .card__icon-number {
     transform: scale(1.03);
   }
+}
+
+.footer {
+  padding: 57px 0 23px 0;
+  max-height: 226px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.footer-navigation {
+  margin-bottom: 50px;
+}
+.footer-navigation__list {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-navigation__list-item {
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */

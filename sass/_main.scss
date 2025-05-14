@@ -53,7 +53,6 @@
     padding: 11px 32px;
     margin-left: auto;
     max-width: 587px;
-    font-size: 20px;
     line-height: 23px;
     letter-spacing: 2px; 
 
@@ -65,11 +64,9 @@
 
     &-link {
       display: block;
-      padding: 11px 32px;
       padding-bottom: 192px;
       margin-top: 14px;
-      text-decoration: none;
-      color: #000;
+
 
       @media screen and (max-width:952px) {
         padding-bottom: 0;
