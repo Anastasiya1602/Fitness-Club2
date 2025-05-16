@@ -1,0 +1,14 @@
+.contact {
+  &-title {
+    padding-top: 115px;
+    padding-bottom: 46px;
+    font-size: 80px;
+
+      @media screen and (max-width: 992px) {
+        padding: 53px 32px 28px 32px;
+        font-size: 60px;
+      }
+  }
+}
+
+
