@@ -733,7 +733,7 @@ button:active {
   display: flex;
   flex-direction: column;
   padding: 38px 28px 32px 28px;
-  width: 310px;
+  max-width: 310px;
   align-items: center;
   border: 6px solid #292929;
   cursor: pointer;
@@ -749,11 +749,10 @@ button:active {
 }
 @media screen and (max-width: 952px) {
   .subscribe-card .card {
-    display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 890px;
-    height: 248px;
+    max-width: 890px;
+    max-height: 248px;
     padding: 66px 56px 66px 65px;
   }
 }
