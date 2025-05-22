@@ -29,7 +29,7 @@
       display: flex;
       flex-direction: column;
       padding: 38px 28px 32px 28px;
-      width: 310px;
+      max-width: 310px;
       align-items: center;
       border: 6px solid #292929;
       cursor: pointer;
@@ -44,11 +44,10 @@
       }
 
       @media screen and (max-width: 952px){
-        display: flex;
         flex-direction: row;
         justify-content: space-around;
-        width: 890px;
-        height: 248px;
+        max-width: 890px;
+        max-height: 248px;
         padding: 66px 56px 66px 65px;
       }
 
@@ -97,8 +96,6 @@
         width: 234px;
         color: #000;
         text-align: center;
-        font-family: "Roboto", sans-serif;
-        font-size: 20px;
         line-height: normal;
         letter-spacing: 2px;
 
@@ -128,24 +125,6 @@
           }
         }
 
-        .card__button {
-          padding: 11px 0px;
-          color: #292929;
-          font-family: "Roboto", sans-serif;
-          font-size: 20px;
-          line-height: normal;
-          letter-spacing: 2px;
-          border: none;
-          background-color: white;
-          cursor: pointer;
-          
-          &:hover {
-            color: #FF8340;
-          }
-          &:active {
-            color: #843500;
-          }        
-        }
       }
       &:hover .card__icon-number {
         transform: scale(1.1);

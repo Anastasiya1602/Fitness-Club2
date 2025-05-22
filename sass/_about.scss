@@ -25,7 +25,6 @@
     padding: 335px 62px 57px 57px;
     max-width: 562px;
     border: 6px solid #FF8340;
-    font-size: 20px;
     line-height: 100%;
     letter-spacing: 1.5px;
 
@@ -40,10 +39,7 @@
 
     &-link {
       display: block;
-      padding: 11px 32px;
       margin-top: 14px;
-      text-decoration: none;
-      color: #000;
 
       @media screen and (max-width: 952px) {
         margin-top: 0px;

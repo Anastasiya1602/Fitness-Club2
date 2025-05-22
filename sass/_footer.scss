@@ -1,0 +1,22 @@
+.footer {
+  padding: 57px 0 23px 0;
+  max-height: 226px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 2px;
+
+  &-navigation {
+    margin-bottom: 50px;
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+
+      &-item {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
